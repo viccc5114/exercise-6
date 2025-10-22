@@ -7,10 +7,13 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">  
 <style>
+  
   ul{
     list-style: none;
     margin: 0;
     padding: 0;
+    text-align: center;
+    font-size: 20px;
   
   }
   li{
@@ -21,8 +24,39 @@
     text-decoration: none;
   }
   ul li a:hover{ 
-    color: red
+    color: red;
   }
+ .container{
+   display:grid;
+   grid-template-columns: 45% 45%;
+   gap: 50px;
+   padding: 30px;  
+   text-align: center;
+   margin: 20px; 
+   background-color: pink
+  }
+  .grid-item{
+    background-color: white;
+    text-align: center;
+    
+  }
+
+    
+    
+    p{
+      width: 100%;
+      text-align:center;
+      padding: 0 30px;
+      box-sizing: border-box;
+    }
+  
+  img {
+    width: 100%;
+    background-color: #e0e0e0; 
+    
+  }
+
+
 
   body {
   font-family: "Open Sans", sans-serif;
@@ -32,6 +66,7 @@
   font-variation-settings: "wdth" 100;
   font-size: 16px;
   width: 960px;
+  margin: auto;
 }
    
   h1 {
@@ -39,9 +74,13 @@
   font-optical-sizing: auto;
   font-weight: 500;
   font-style: normal;
+  font-size: 30px;
+  text-align: center;
+  padding: 0 100px;
   }
   
   #site-title {
+    font-size: 70px;
   }
   
   nav {
@@ -52,6 +91,11 @@
   }
   
   footer {
+    text-align: center;
+    font-size: 25px;
+    padding: 0 130px;
+    background-color: #ADD8E6;
+    
   }
   
 </style>
@@ -66,15 +110,29 @@
 </ul>
 </nav>
 <h1>At Greg's Banh Mi, we're serving up the perfect marriage of French and Vietnamese culinary traditions—crispy-on-the-outside, pillowy-on-the-inside baguettes loaded with bold, fresh flavorus that'll make your taste buds sing.</h1>
-<h2>Classic Pork Banh Mi</h2>
+<div class="container">
+<div class="grid-item">
   <img src="sandwich.jpg" alt="a pork sandwich">
-<p>Tender marinated pork topped with crisp pickled vegetables, fresh cilantro, and a smear of pâté on a perfectly crusty baguette. A traditional favorite that balances savory, sweet, and tangy flavors in every bite.</p>
-<h2>Lemongrass Chicken Banh Mi</h2>
-<p>Grilled chicken marinated in fragrant lemongrass and garlic, paired with cucumber, jalapeños, and our house mayo. Light yet satisfying, this sandwich brings bright, aromatic flavors that'll transport you straight to Saigon.</p>
-<h2>Tofu Banh Mi</h2>
-<p>Crispy pan-fried tofu glazed in sweet soy sauce, layered with daikon, carrots, and fresh herbs for a vegetarian delight. Proof that plant-based can be just as bold and craveable as any meat-filled sandwich.</p>
-<h2>Five-Spice Beef Banh Mi</h2>
-<p>Thinly sliced beef seared with aromatic five-spice blend and served with pickled vegetables and spicy Sriracha mayo. Rich, warming spices meet cool, crunchy toppings for an unforgettable flavor experience.</p>
-<footer>Because life's too short for boring sandwiches. Greg's got you covered—one crispy baguette at a time.</footer>
+  <h2>Classic Pork Banh Mi</h2>
+<p>Tender marinated pork topped with crisp pickled vegetables, fresh cilantro, and a smear of pâté on a perfectly crusty baguette. A traditional favorite that balances savory, sweet, and tangy flavors in every bite.</p> </div>
+
+  <div class="grid-item">
+  <img src="sandwich.jpg" alt="a chicken sandwich">
+     <h2>Lemongrass Chicken Banh Mi</h2>
+<p>Grilled chicken marinated in fragrant lemongrass and garlic, paired with cucumber, jalapeños, and our house mayo. Light yet satisfying, this sandwich brings bright, aromatic flavors that'll transport you straight to Saigon.</p></div>
+
+    <div class="grid-item">
+  <img src="sandwich.jpg" alt="a tofu banh mi sandwich">
+      <h2>Tofu Banh Mi</h2>
+<p>Crispy pan-fried tofu glazed in sweet soy sauce, layered with daikon, carrots, and fresh herbs for a vegetarian delight. Proof that plant-based can be just as bold and craveable as any meat-filled sandwich.</p></div> 
+
+    <div class="grid-item">
+  <img src="sandwich.jpg" alt="a beef sandwich">
+      <h2>Five-Spice Beef Banh Mi</h2>
+<p>Thinly sliced beef seared with aromatic five-spice blend and served with pickled vegetables and spicy Sriracha mayo. Rich, warming spices meet cool, crunchy toppings for an unforgettable flavor experience.</p></div> 
+  </div>
+
+  <footer>Because life's too short for boring sandwiches. Greg's got you covered—one crispy baguette at a time.</footer>
+  
 </body>
 </html>
